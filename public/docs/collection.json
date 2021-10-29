@@ -1,0 +1,72 @@
+{
+    "variable": [
+        {
+            "id": "baseUrl",
+            "key": "baseUrl",
+            "type": "string",
+            "name": "string",
+            "value": "example-app.test"
+        }
+    ],
+    "info": {
+        "name": "Laravel",
+        "_postman_id": "dd5882b9-6d51-4835-bace-09058b0b256d",
+        "description": "",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "Pokemon",
+            "description": "\nAPI endpoints to get Pokemon",
+            "item": [
+                {
+                    "name": "Retrieve a Pokemon by calling external APIs or retrieve it from Redis",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/pokemon\/:pokemon",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/pokemon\/:pokemon",
+                            "variable": [
+                                {
+                                    "id": "pokemon",
+                                    "key": "pokemon",
+                                    "value": "expedita",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\n \"name\": \"Pikachu\",\n \"description\": \"It relaxes\",\n \"sprite\": \"url\",\n}",
+                            "name": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "noauth"
+    }
+}

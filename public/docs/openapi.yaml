@@ -1,0 +1,52 @@
+openapi: 3.0.3
+info:
+  title: Laravel
+  description: ''
+  version: 1.0.0
+servers:
+  -
+    url: 'http://example-app.test'
+paths:
+  '/api/pokemon/{pokemon}':
+    get:
+      summary: 'Retrieve a Pokemon by calling external APIs or retrieve it from Redis'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        200:
+          description: ''
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: "{\n \"name\": \"Pikachu\",\n \"description\": \"It relaxes\",\n \"sprite\": \"url\",\n}"
+      tags:
+        - Pokemon
+      security: []
+    parameters:
+      -
+        in: path
+        name: pokemon
+        description: ''
+        example: expedita
+        required: true
+        schema:
+          type: string
+tags:
+  -
+    name: Pokemon
+    description: "\nAPI endpoints to get Pokemon"

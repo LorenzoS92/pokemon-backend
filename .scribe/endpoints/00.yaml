@@ -1,0 +1,37 @@
+name: Pokemon
+description: |-
+
+  API endpoints to get Pokemon
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: 'api/pokemon/{pokemon}'
+    metadata:
+      title: 'Retrieve a Pokemon by calling external APIs or retrieve it from Redis'
+      description: ''
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      pokemon:
+        name: pokemon
+        description: ''
+        required: true
+        example: expedita
+        type: string
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 200
+        content: |-
+          {
+           "name": "Pikachu",
+           "description": "It relaxes",
+           "sprite": "url",
+          }
+        headers: []
+        description: '200'
+    responseFields: []
