@@ -29,7 +29,8 @@ Please check for any active firewall or port blocking in the OS or your software
 ## Usage
 
 To use the API you can use it via postman. 
-There is an openAPI documentation created for this API, inside public/docs folder.
+
+*There is an openAPI documentation created for this API, inside public/docs folder.*
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
