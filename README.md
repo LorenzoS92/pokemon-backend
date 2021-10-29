@@ -1,8 +1,12 @@
 # Pokemon Backend
 
 Pokemon Backend is a project written in PHP with Laravel Framework.
+
 It calls Pokémon APIs and Fun Translation API to retrieve Shakespeare description of a Pokémon.
-It uses Redis to store cache of retrieved Pokemons.
+
+Please note that the application uses Redis to store cache of retrieved data from APIs.
+
+All classes are Unit Tested, and i've provided an integration tests of the pokemon/{pokemon} api.
 
 ## Prerequisites
 
@@ -30,7 +34,9 @@ Please check for any active firewall or port blocking in the OS or your software
 
 To use the API you can use it via postman. 
 
-*There is an openAPI documentation created for this API, inside public/docs folder.*
+The project exposes /pokemon/{pokemonName} API, in GET.
+
+You can review the API documentation via openAPI documentation created, inside public/docs folder.*
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
