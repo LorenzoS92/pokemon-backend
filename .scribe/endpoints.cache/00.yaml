@@ -10,7 +10,7 @@ endpoints:
       - GET
     uri: 'api/pokemon/{pokemon}'
     metadata:
-      title: 'Retrieve a Pokemon by calling external APIs or retrieve it from Redis'
+      title: 'Retrieve a Pokemon with shakespearean description and their image, by calling Poke API and other external APIs or retrieve it from cache'
       description: ''
       authenticated: false
     headers:
@@ -21,7 +21,7 @@ endpoints:
         name: pokemon
         description: ''
         required: true
-        example: expedita
+        example: harum
         type: string
     queryParameters: []
     bodyParameters: []

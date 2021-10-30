@@ -13,7 +13,7 @@ use App\Repository\PokemonRepository;
 class PokemonController extends Controller
 {
     /**
-     * Retrieve a Pokemon by calling external APIs or retrieve it from Redis
+     * Retrieve a Pokemon with shakespearean description and their image, by calling Poke API and other external APIs or retrieve it from cache
      *
      *
      * @response {

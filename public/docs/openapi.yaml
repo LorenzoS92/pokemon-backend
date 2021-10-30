@@ -1,15 +1,15 @@
 openapi: 3.0.3
 info:
-  title: Laravel
+  title: 'Pokemon Backend'
   description: ''
   version: 1.0.0
 servers:
   -
-    url: 'http://example-app.test'
+    url: 'http://localhost'
 paths:
   '/api/pokemon/{pokemon}':
     get:
-      summary: 'Retrieve a Pokemon by calling external APIs or retrieve it from Redis'
+      summary: 'Retrieve a Pokemon with shakespearean description and their image, by calling Poke API and other external APIs or retrieve it from cache'
       description: ''
       parameters:
         -
@@ -42,7 +42,7 @@ paths:
         in: path
         name: pokemon
         description: ''
-        example: expedita
+        example: harum
         required: true
         schema:
           type: string

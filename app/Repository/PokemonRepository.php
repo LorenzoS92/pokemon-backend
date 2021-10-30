@@ -30,7 +30,7 @@ class PokemonRepository
      */
     public function getPokemon(string $pokemonName): ?PokemonResource
     {
-        return Cache::remember($pokemonName, 60 * 24 * 24, function () use ($pokemonName) {
+        return Cache::remember($pokemonName, config('CACHE_TTL'), function () use ($pokemonName) {
             return $this->getUncachedPokemonFromAPI($pokemonName);
         });
     }

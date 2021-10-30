@@ -5,12 +5,12 @@
             "key": "baseUrl",
             "type": "string",
             "name": "string",
-            "value": "example-app.test"
+            "value": "localhost"
         }
     ],
     "info": {
-        "name": "Laravel",
-        "_postman_id": "dd5882b9-6d51-4835-bace-09058b0b256d",
+        "name": "Pokemon Backend",
+        "_postman_id": "fe9b9f5e-9793-40ab-b6b7-991743dfed5c",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -20,7 +20,7 @@
             "description": "\nAPI endpoints to get Pokemon",
             "item": [
                 {
-                    "name": "Retrieve a Pokemon by calling external APIs or retrieve it from Redis",
+                    "name": "Retrieve a Pokemon with shakespearean description and their image, by calling Poke API and other external APIs or retrieve it from cache",
                     "request": {
                         "url": {
                             "protocol": "http",
@@ -32,7 +32,7 @@
                                 {
                                     "id": "pokemon",
                                     "key": "pokemon",
-                                    "value": "expedita",
+                                    "value": "harum",
                                     "description": ""
                                 }
                             ]
