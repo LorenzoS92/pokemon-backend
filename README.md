@@ -6,6 +6,8 @@ It calls Pokémon APIs and Fun Translation API to retrieve Shakespeare descripti
 
 It uses Redis to handles cache of Pokemons and avoid calling APIs.
 
+The project uses Docker and Laravel Sail for local development
+
 ## Prerequisites
 
 To run the project you should have installed:
@@ -28,9 +30,13 @@ Docker will expose the port 80.
 
 Please check for any active firewall or port blocking in the OS or your software.
 
-## Usage
+## API Usage
 
-*There is an openAPI documentation created for this API, inside public/docs folder.*
+There is an OpenAPI and Postman documentation created with Scribe, inside public/docs folder.
+
+Open index.html file to review documentation with browser and to test It
+
+## Command Usage
 
 The project provides a Makefile for running commands: start, stop, test, shell, share.
 
